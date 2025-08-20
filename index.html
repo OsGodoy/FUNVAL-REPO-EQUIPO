@@ -7,32 +7,77 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="bg-green-500 text-white h-16 flex justify-center items-center text-2xl font-bold">header
+    <header class="bg-[#090e28] text-white h-16 sm:h-20 md:h-24 lg:h-32 flex justify-center items-center gap-20 text-2xl font-bold">
+        <img class="h-15 sm:h-full" src="https://upload.wikimedia.org/wikipedia/commons/5/53/El_nuevo_logo_de_cuevana.png" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <nav class="hidden md:flex">
+            <ul class="text-xs flex items-center justify-center gap-6">
+                <li>MENU</li>
+                <li>PELICULAS</li>
+                <li>SERIES</li>
+                <li>ANIMES</li>
+            </ul>
+        </nav>
     </header>
     <main class="text-white sm:grid sm:grid-cols-4 h-full w-full">
       <div class="red-container mt-2 w-[100%] bg-red-500 justify-center items-center text-2xl font-bold sm:flex hidden">rojo</div>
 
       <div class="pink-container col-span-3 flex flex-col gap-2 mt-2 px-2">
-        <div class="bg-pink-500 h-10 flex justify-center items-center text-2xl font-bold">rosa</div>
+        <div class="bg-[#0080fc] h-10 flex justify-center items-center text-2xl font-bold rounded-2xl">
+          <input class="w-80 md:w-120 lg:w-150 outline-none text-center" type="text" placeholder="Buscar Pelicula" />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </div>
 
         <div class="orange-container h-50 grid gap-2 lg:grid-cols-2 lg:h-72">
           <div class="w-full h-full bg-orange-300 flex justify-center items-center text-2xl font-bold">naranja1</div>
           <div class="w-full h-full bg-orange-300 flex justify-center items-center text-2xl font-bold">naranja2</div>
         </div>
-    <div class="blue-container grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72">caja1</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72">caja2</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72 lg:col-span-2">caja3</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72">caja4</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72">caja5</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72">caja6</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72">caja7</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72 lg:col-span-2">caja8</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72">caja9</div>
-          <div class="w-full h-36 bg-blue-950 flex justify-center items-center text-2xl font-bold lg:h-72">caja10</div>
+    <div
+          class="blue-container grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6"
+        >
+          <div
+            class="w-full h-36 bg-[url(./amor.jpg)] flex justify-center items-center text-2xl font-bold lg:h-72 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
+          <div
+            class="w-full h-36 bg-[url(./castillo.jpg)] flex justify-center items-center text-2xl font-bold lg:h-72 cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
+          <div
+            class="w-full h-36 bg-[url('conjuro3.jpg')] flex justify-center items-center text-2xl font-bold lg:h-72 lg:col-span-2 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
+          <div
+            class="w-full h-36 bg-[url('kimetsu.jpg')] flex justify-center items-center text-2xl font-bold lg:h-72 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
+          <div
+            class="w-full h-36 bg-[url('lobo.jpg')] flex justify-center items-center text-2xl font-bold lg:h-72 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          >
+            caja5
+          </div>
+          <div
+            class="w-full h-36 bg-[url('mar.jpg')] flex justify-center items-center text-2xl font-bold lg:h-72 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
+          <div
+            class="w-full h-36bg bg-[url('tiburon.jpg')] flex justify-center items-center text-2xl font-bold lg:h-72 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
+          <div
+            class="w-full h-36 bg-[url('tron.jpg')] flex justify-center items-center text-2xl font-bold lg:h-72 lg:col-span-2 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
+          <div
+            class="w-full h-36 bg-[url('persona.jpg')] flex justify-center items-center text-2xl font-bold lg:h-72 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
+          <div
+            class="w-full h-36 bg-[url('zoombie.jpg')] flex justify-center items-center text-2xl font-bold lg:h-72 bg-cover bg-center transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
+          ></div>
         </div>
       </div>
     </main>
-    <footer class="bg-green-500 text-white h-10 mt-2 flex justify-center items-center text-2xl font-bold">footer</footer>
+    <footer class="bg-[#090e28] text-white h-10 mt-2 flex justify-center items-center text-2xl font-bold">
+        <div>
+            <p class="text-xs">© 2025 FUNVAL</p>
+        </div>
+    </footer>
 </body>
 </html>
